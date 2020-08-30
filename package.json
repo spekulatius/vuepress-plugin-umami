@@ -1,0 +1,42 @@
+{
+  "name": "vuepress-plugin-umami",
+  "version": "0.0.1",
+  "description": "Umami Analytics plugin for VuePress",
+  "main": "index.js",
+  "scripts": {
+    "publish": "git push origin --tags && git push origin",
+    "release:major": "npm version major && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:patch": "npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spekulatius/vuepress-plugin-minimal-analytics.git"
+  },
+  "keywords": [
+    "vue",
+    "vuepress",
+    "plugin",
+    "vuepress-plugin",
+    "analytics",
+    "umami"
+  ],
+  "author": {
+    "name": "Peter Thaleikis",
+    "url": "https://www.peterthaleikis.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/spekulatius/vuepress-plugin-umami",
+  "bugs": {
+    "url": "https://github.com/spekulatius/vuepress-plugin-umami/issues"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "index.js",
+    "inject.js",
+    "README.md",
+    "LICENSE"
+  ]
+}
