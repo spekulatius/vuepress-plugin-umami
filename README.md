@@ -29,21 +29,28 @@ yarn add vuepress-plugin-umami
 
 ## Configuration
 
-Add the vuepress plugin in your site or theme config file. Configuration is done as part of the plugin-configuration.
-
-Usually in `.vuepress/config.js`:
+Add the vuepress plugin in your site or theme config file. The configuration is done as part of the plugin-configuration. Your configuration file is usually located under `.vuepress/config.js`. Extend it with this line:
 
 ```js
 module.exports = {
   plugins: [
-    ['umami', {trackerUrl: 'http://link-to-your-umami-instance.project.com', siteId: 'YYY'}]
+    ['umami', {trackerUrl: 'http://link-to-your-umami-instance.project.com', siteId: 'a9safa7-asfasf-asfasf'}]
 
     // other plugins
+    // ...
   ]
 }
 ```
 
-See [official docs](https://vuepress.vuejs.org/plugin/using-a-plugin.html) for more details on how to work with VuePress plugins.
+You will get parameters required from your Umami instance:
+
+![Umami Settings](./settings.png)
+
+*Please note:* The URL in the configuration shouldn't include `/umami.js`.
+
+
+For more details on how to work with VuePress plugins check the [official docs](https://vuepress.vuejs.org/plugin/using-a-plugin.html).
+
 
 ## License
 
