@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spekulatius/vuepress-plugin-minimal-analytics.git"
+    "url": "git+https://github.com/spekulatius/vuepress-plugin-umami.git"
   },
   "keywords": [
     "vue",
