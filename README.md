@@ -34,7 +34,7 @@ Add the vuepress plugin in your site or theme config file. The configuration is 
 ```js
 module.exports = {
   plugins: [
-    ['umami', {trackerUrl: 'http://link-to-your-umami-instance.project.com', siteId: 'a9safa7-asfasf-asfasf'}]
+    'umami': { trackerUrl: 'http://link-to-your-umami-instance.project.com', siteId: 'a9safa7-asfasf-asfasf' }
 
     // other plugins
     // ...
