@@ -1,6 +1,6 @@
 # Umami Analytics Plugin for VuePress
 
-This project helps to integrate [Umami Analytics](https://umami.is/) in your [VuePress](https://vuepress.vuejs.org/) site. Umami is a self-hosted, privacy-friendly alternative to Google Analytics.
+This project helps to integrate [Umami Analytics](https://umami.is/) in your [VuePress](https://vuepress.vuejs.org/) site. Umami is a self-hosted, [privacy-friendly alternative to Google Analytics](https://github.com/spekulatius/awesome-privacy-friendly-web-analytics).
 
 
 ## Why?
