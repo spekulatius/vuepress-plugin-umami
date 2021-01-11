@@ -14,8 +14,13 @@ export default ({ router }) => {
       var d=document,
       g=d.createElement('script'),
       s=d.getElementsByTagName('script')[0];
-
       g.setAttribute('data-website-id', SITE_ID);
+
+      // allow option for respecting user Do Not Track request (default to true)
+      if (DO_NOT_TRACK == true) {
+        g.setAttribute('data-do-not-track', DO_NOT_TRACK);
+      }
+
       g.async=true;
       g.defer=true;
       g.src=TRACKER_URL+'/umami.js';
