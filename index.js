@@ -7,7 +7,7 @@ module.exports = (options = {}, context) => ({
     const siteId = options.siteId || siteConfig.siteId
     const TRACKER_URL = trackerUrl || false
     const SITE_ID = siteId || false
-    const DO_NOT_TRACK =  options.doNotTrack != null ? options.doNotTrack : true // Option to respect user Do Not Track requests, default to true
+    const DO_NOT_TRACK =  options.doNotTrack != null ? options.doNotTrack : false // Option to respect user Do Not Track requests, default to false to preserve existing functionality
 
     return { TRACKER_URL, SITE_ID, DO_NOT_TRACK }
   },
