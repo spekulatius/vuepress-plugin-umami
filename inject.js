@@ -14,12 +14,23 @@ export default ({ router }) => {
       var d=document,
       g=d.createElement('script'),
       s=d.getElementsByTagName('script')[0];
-      
       g.setAttribute('data-website-id', SITE_ID);
 
-      // allow option for respecting user Do Not Track request
+      // Optional config
+      if (DATA_HOST_URL != "") {
+        g.setAttribute('data-host-url', DATA_HOST_URL);
+      }
+      if (DATA_AUTO_TRACK == false) {
+        g.setAttribute('data-auto-track', DATA_AUTO_TRACK);
+      }
       if (DO_NOT_TRACK == true) {
         g.setAttribute('data-do-not-track', DO_NOT_TRACK);
+      }
+      if (DATA_CACHE == true) {
+        g.setAttribute('data-cache', DATA_CACHE);
+      }
+      if (DATA_DOMAINS != "") {
+        g.setAttribute('data-domains', DATA_DOMAINS);
       }
 
       g.async=true;
